@@ -1,0 +1,228 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #737373;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+
+/************  
+Your Code Here
+Add code to remove the styling for the 
+list items in an unordered lists.
+*************/
+
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+ /************  
+  Your Code Here -  Write the selector AND rule 
+
+  Add an underline whenever the mouse hovers over a 
+  link in the nav. 
+  *************/ 
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  /************  
+  Your Code Here
+  By default this link should be positioned 40px higher
+  than the top of it's parent element.
+  *************/
+}
+
+  /************  
+  Your Code Here -  Write the selector AND rule 
+
+  The link in the skip class should be positioned at the 
+  top of it's parent when it is in focus. 
+  *************/ 
+
+
+  /************  
+  Your Code Here -  Write the selector AND rule 
+
+  Any element in focus should have a 2px black border 
+  on all four sides.
+  *************/  
+
+
+nav{
+  background-color: #ddd;
+  padding: 25px 0; 
+  text-align: left;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+
+
+.container{
+  /************  
+  Your Code Here
+  **************/
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+
+  /************  
+  Your Code Here
+  Set background-image to header.jpg in the images folder 
+  **************/
+ 
+
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 1 / auto;   /*Can you rewrite it?*/
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+
+}
+.about, .method, .clients, .contact{
+  /************  
+  Your Code Here
+  **************/
+}
+
+.about-image, .method-image, .clients-image, .contact-image{
+  /************  
+  Your Code Here
+  **************/
+}
+
+.about, .about-image{
+  /************  
+  Your Code Here
+  **************/
+}
+
+.method, .method-image{
+  /************  
+  Your Code Here
+  **************/
+}
+
+
+.clients, .clients-image{
+  /************  
+  Your Code Here
+  **************/
+}
+
+
+.contact, .contact-image{
+  /************  
+  Your Code Here
+  **************/
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+
+  /************  
+  Your Code Here
+  Align the content in the center
+  **************/
+}
+
+
+@media all and (min-width: 800px){
+
+  nav{
+    padding: 30px 0px;
+    /************  
+    Your Code Here
+    **************/
+  }
+
+  .container{
+    /************  
+    Your Code Here
+    **************/
+  }
+
+  .about, .clients, .method-image, .contact-image{
+    /************  
+    Your Code Here
+    **************/
+  }
+
+  .about-image, .clients-image, .method, .contact{
+    /************  
+    Your Code Here
+    **************/
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+
+  html{
+    /************  
+    Your Code Here
+    Remove the scrolling
+    *************/
+  }
+
+  .skip a{
+    /************  
+    Your Code Here
+    Remove the animation
+    *************/
+  }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
